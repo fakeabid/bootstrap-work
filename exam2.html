@@ -26,7 +26,7 @@
                 padding-bottom: 30px;
             }
 
-            .col p, .col button, #sidebar {
+            .col p, .col button, #sidebar, .modal {
                 font-size: 0.8rem;
             }
         </style>
@@ -102,7 +102,7 @@
                 <div class="p-5 bg-light rounded">
                     <h1>Hello, world!</h1>
                     <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content.</p>
-                    <button class="btn btn-primary text-white p-2">Learn More <small>></small></button>
+                    <button class="btn btn-primary text-white p-2" data-toggle="modal" data-target="#hero-modal">Learn More <small>></small></button>
                 </div>
                 <br>
                 <br>
@@ -141,6 +141,20 @@
                 </div>
             </div>
         </main>
+        <div class="modal fade" id="hero-modal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Warning</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">This link is directing you to visit another website. Continue anyway?</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary text-white btn-sm">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer></footer>
     </body>
 </html>
